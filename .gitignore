@@ -1,0 +1,14 @@
+*.csproj
+*.unityproj
+*.sln
+*.pdb
+*.mdb
+*.pdb.meta
+*.mdb.meta
+*.userprefs
+*.unitypackage
+Temp
+Library/
+obj/
+bin/
+.vs/

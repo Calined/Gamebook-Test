@@ -1,0 +1,5 @@
+﻿{
+  "Name": "TestAudioAsset",
+  "type": "audio",
+  "url": "http://exg-share.s3.amazonaws.com/welcome.wav"
+}
