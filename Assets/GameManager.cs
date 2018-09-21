@@ -5,23 +5,33 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
+    //this is the static instance of the game manager
     static private GameManager Instance;
 
+    //this is a ist of json text assets
     public List<TextAsset> _jsonTexts;
 
+    //this is a static list of assets
     static public List<Asset> assets;
+    //this is a list of instantiated assets as gameobjects
     static public List<GameObject> InstantiatedAssets;
 
+    //this is a active loading asset
     public static Asset ActiveLoadingAsset;
+    //this is an asyncoperation / the current instantiating asset operation
     public static AsyncOperation CurrentInstantiatingAssetOperation { get; internal set; }
 
+    //a bool if the scene is set up
     private static bool _isSceneSetup;
 
     // Use this for initialization
     private void Awake()
     {
+        //assign the static instance to this one
         Instance = this;
+        //make a new list of assets and put it into the static public one
         assets = new List<Asset>();
+        //make a new list of gameobjects and put it into the instantiated assets public thing
         InstantiatedAssets = new List<GameObject>();
     }
 
